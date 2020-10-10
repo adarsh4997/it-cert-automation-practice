@@ -34,6 +34,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         # Hello message
         self.wfile.write(b'Hello Cloud')
+        self.wfile.write(b'well come to Google IT Python Automation')
         # Now get the hostname and IP and print that as well.
         hostname = socket.gethostname()
         host_ip = socket.gethostbyname(hostname)
